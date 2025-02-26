@@ -1,0 +1,28 @@
+[package]
+name = "magic_monitor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"
+num-integer = "0.1"
+solana-sdk = "=1.18.22"
+solana-client = "=1.18.22"
+solana-program = "=1.18.22"
+tokio = { version = "1.28", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+log = "0.4"
+env_logger = "0.11.6"
+dotenv = "0.15.0"
+anyhow = "1.0.95"
+base64 = "0.22.1"
+spl-token = "7.0.0"
+chrono = "0.4.39"
+
+
+[profile.release]
+panic = "abort"
+
